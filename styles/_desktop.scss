@@ -1,0 +1,65 @@
+@media screen and (min-width: 1000px) {
+
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+        background-repeat: repeat;
+    }
+
+    .intro {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "pitch wrapper"
+        "footer footer"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1rem;
+        column-gap: 35px;
+        align-items: center;
+    }
+    
+    .pitch {
+        grid-area: pitch;
+        width: 540px;
+        text-align: left;
+        padding: 75px 20px 63px 0;
+        justify-self: right;
+    }
+
+    .pitch__title {
+        font-size: 3.1rem;
+    }
+    
+    .wrapper {
+        justify-self: left;
+    }
+
+    .offer {
+        grid-area: wrapper;
+        width: 540px;
+    }
+    
+    .signup {
+        grid-area: wrapper;
+        width: 540px;
+        padding: 40px 40px 43px 40px;
+    }
+    
+    .signup__enter {
+        margin: 0 0 21px 0;
+        padding: 17px 0 15px 32px;
+    }
+    
+    .signup__button {
+        padding: 15px 0 13px 0;
+    }
+    
+    .signup__terms {
+        padding: 18px 15px 0 15px;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+}

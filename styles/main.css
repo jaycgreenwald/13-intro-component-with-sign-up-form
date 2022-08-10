@@ -17,105 +17,110 @@ body {
   background-position: center;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .intro {
-  width: 375px;
-  padding: 24px;
+  padding: 1.5rem;
+  width: 23.4375rem;
 }
 
 .semi-bold {
   font-weight: 600;
 }
 
-.heading {
-  text-align: center;
+.pitch {
   color: hsl(100deg, 100%, 100%);
-  padding: 75px 0 63px 0;
+  padding: 4.6875rem 0 3.9375rem 0;
+  text-align: center;
 }
 
-.heading__title {
+.pitch__title {
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.8px;
-  padding: 0 0 24px 0;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
+  padding: 0 0 1.875rem 0;
 }
 
-.heading__text {
+.pitch__text {
   font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 0.1px;
 }
 
 .offer {
   background-color: hsl(248deg, 32%, 49%);
   border-radius: 10px;
-  padding: 19px 78px 18px 78px;
-  box-shadow: 0px 7px 1px 0px hsla(120deg, 1%, 34%, 0.302);
+  box-shadow: 0px 0.4375rem 0.0625rem 0px hsla(0deg, 0%, 10%, 0.302);
+  padding: 1.1875rem 4.875rem 1.125rem 4.875rem;
 }
 
 .offer__text {
+  color: hsl(100deg, 100%, 100%);
   font-size: 0.95rem;
   font-weight: 400;
-  color: hsl(100deg, 100%, 100%);
-  text-align: center;
   line-height: 1.7;
+  text-align: center;
 }
 
 .signup {
+  align-items: center;
   background-color: hsl(100deg, 100%, 100%);
-  border-radius: 10px;
+  box-shadow: 0px 0.4375rem 0.0625rem 0px hsla(0deg, 0%, 10%, 0.302);
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 24px;
-  margin-top: 24px;
+  margin: 1.5rem 0 0 0;
+  padding: 1.5rem 1.5rem 1.375rem 1.5rem;
+}
+
+.signup__form {
+  width: 100%;
 }
 
 .signup__enter {
-  color: hsl(249deg, 10%, 26%);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  width: 100%;
-  padding: 17px 0 15px 19px;
-  margin: 0 0 17px 0;
+  box-shadow: none;
   border: 1px hsl(246deg, 25%, 77%) solid;
   border-radius: 6px;
+  color: hsl(249deg, 10%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   letter-spacing: 0.7px;
-  box-shadow: none;
+  margin: 0 0 1rem 0;
+  padding: 1.0625rem 0 0.9375rem 1.1875rem;
+  width: 100%;
 }
 
 .signup__button {
   background-color: hsl(154deg, 59%, 51%);
-  font-family: "Poppins", sans-serif;
-  color: hsl(100deg, 100%, 100%);
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   border: none;
   border-radius: 6px;
-  padding: 18px 0 16px 0;
+  box-shadow: 0px 0.25rem 0.0625rem 0px #2fba7e;
+  color: hsl(100deg, 100%, 100%);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  padding: 0.9375rem 0 0.8125rem 0;
+  text-transform: uppercase;
   width: 100%;
-  box-shadow: 0px 5px 1px 0px #2fba7e;
 }
 
 .signup__terms {
-  text-align: center;
-  font-size: 0.7rem;
   color: hsl(246deg, 25%, 77%);
-  padding: 8px 15px 0 15px;
+  font-size: 0.7rem;
+  line-height: 2;
+  padding: 0.875rem 0.9375rem 0 0.9375rem;
+  text-align: center;
 }
 
-.signup__terms > span {
+.signup__terms--bold {
   color: hsl(0deg, 100%, 74%);
-  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+
+input:focus {
+  border: 1px black solid;
+  outline: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -123,58 +128,48 @@ body {
     background-image: url(../images/bg-intro-desktop.png);
     background-repeat: repeat;
   }
-
   .intro {
     width: 100%;
     display: grid;
-    grid-template-areas: "heading wrapper" "footer footer";
+    grid-template-areas: "pitch wrapper" "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1rem;
     -moz-column-gap: 35px;
          column-gap: 35px;
     align-items: center;
   }
-
-  .heading {
-    grid-area: heading;
+  .pitch {
+    grid-area: pitch;
     width: 540px;
     text-align: left;
     padding: 75px 20px 63px 0;
     justify-self: right;
   }
-
-  .heading__title {
+  .pitch__title {
     font-size: 3.1rem;
   }
-
   .wrapper {
     justify-self: left;
   }
-
   .offer {
     grid-area: wrapper;
     width: 540px;
   }
-
   .signup {
     grid-area: wrapper;
     width: 540px;
     padding: 40px 40px 43px 40px;
   }
-
   .signup__enter {
     margin: 0 0 21px 0;
-    padding: 17px 0 15px 30px;
+    padding: 17px 0 15px 32px;
   }
-
   .signup__button {
     padding: 15px 0 13px 0;
   }
-
   .signup__terms {
     padding: 18px 15px 0 15px;
   }
-
   footer {
     grid-area: footer;
   }
