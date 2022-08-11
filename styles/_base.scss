@@ -10,12 +10,14 @@ html {
 }
 
 body {
+    align-items: center;
     font-family: $body-font;
     background-color: $red;
     background-image: url(../images/bg-intro-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    height: 100vh;
     justify-content: center;
     // position: absolute;
     // top: 0;
@@ -101,12 +103,13 @@ body {
 }
 
 .signup__error {
-    background-image: url(/images/icon-error.svg);
+    background-image: url(../images/icon-error.svg);
     background-repeat: no-repeat;
     height: 1.5rem;
     position: absolute;
     right: 1.5625rem;
     top: 1rem;
+    // visibility: hidden;
     width: 1.5rem;
 }
 

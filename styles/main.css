@@ -10,12 +10,14 @@ html {
 }
 
 body {
+  align-items: center;
   font-family: "Poppins", sans-serif;
   background-color: hsl(0deg, 100%, 74%);
   background-image: url(../images/bg-intro-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -95,7 +97,7 @@ body {
 }
 
 .signup__error {
-  background-image: url(/images/icon-error.svg);
+  background-image: url(../images/icon-error.svg);
   background-repeat: no-repeat;
   height: 1.5rem;
   position: absolute;
@@ -143,14 +145,14 @@ input:focus {
     background-repeat: repeat;
   }
   .intro {
-    width: 100%;
+    align-items: center;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
     display: grid;
     grid-template-areas: "pitch wrapper" "footer footer";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1rem;
-    -moz-column-gap: 35px;
-         column-gap: 35px;
-    align-items: center;
+    width: 100%;
   }
   .pitch {
     grid-area: pitch;

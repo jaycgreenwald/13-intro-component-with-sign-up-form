@@ -6,7 +6,8 @@
     }
 
     .intro {
-        width: 100%;
+        align-items: center;
+        column-gap: 35px;
         display: grid;
         grid-template-areas: 
         "pitch wrapper"
@@ -14,8 +15,7 @@
         ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1rem;
-        column-gap: 35px;
-        align-items: center;
+        width: 100%;
     }
     
     .pitch {
