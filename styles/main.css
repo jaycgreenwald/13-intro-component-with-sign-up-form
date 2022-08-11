@@ -90,6 +90,20 @@ body {
   width: 100%;
 }
 
+.signup__control {
+  position: relative;
+}
+
+.signup__error {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  position: absolute;
+  right: 1.5625rem;
+  top: 1rem;
+  width: 1.5rem;
+}
+
 .signup__button {
   background-color: hsl(154deg, 59%, 51%);
   border: none;
