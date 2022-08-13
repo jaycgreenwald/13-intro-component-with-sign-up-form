@@ -10,12 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/main.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main class="intro">
@@ -38,29 +32,39 @@
 
       <!-- sign up form -->
       <div class="signup">
-        <form class="signup__form" action="/">
+        <form class="signup__form js-signup__form" action="/">
+          <!-- first name -->
           <div class="signup__control">
             <label for="firstname"></label>
-            <input type="text" class="signup__enter" placeholder="First Name" name="firstname" id="firstname">
-            <div class="signup__error"></div>
+            <input type="text" class="signup__enter js-first-name" placeholder="First Name" name="firstname" id="firstname">
+            <div class="signup__error-icon  js-fn-error-icon"></div>
+            <p class="signup__error-text js-fn-error-text">
+              <em>
+                First Name cannot be empty
+              </em>
+            </p>
           </div>
+          <!-- last name -->
           <div class="signup__control">
             <label for="lastname"></label>
             <input type="text" class="signup__enter" placeholder="Last Name" name="lastname" id="lastname">
-            <div class="signup__error"></div>
+            <div class="signup__error-icon  js-ln-error-icon"></div>
+            <p class="signup__error-text js-ln-error-text"><em>Last Name cannot be empty</em></p>
           </div>
           <div class="signup__control">
             <label for="email"></label>
-            <input type="email" class="signup__enter" placeholder="Email Address" name="email" id="email">
-            <div class="signup__error"></div>
+            <input type="email" class="signup__enter js-email" placeholder="Email Address" name="email" id="email">
+            <div class="signup__error-icon"></div>
+            <p class="signup__error-text"><em>Looks like this is not an email</em></p>
           </div>
           <div class="signup__control">
             <label for="password"></label>
             <input type="password" class="signup__enter" placeholder="Password" name="password" id="password">
-            <div class="signup__error"></div>
+            <div class="signup__error-icon js-pw-error-icon"></div>
+            <p class="signup__error-text js-pw-error-text"><em>Password cannot be empty</em></p>
           </div>
           <!-- <input type="button" class="signup__button" value="Claim your free trial"> -->
-          <input type="submit" class="signup__button" value="Claim your free trial">
+          <input type="submit" class="signup__button js-signup__button" value="Claim your free trial">
        </form>
 
       <p class="signup__terms">By clicking the button, you are agreeing to our <span class="signup__terms--bold">Terms and Services</span>

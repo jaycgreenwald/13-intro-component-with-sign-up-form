@@ -15,6 +15,7 @@
         ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1rem;
+        padding: 1.5rem 1.5rem 8px 1.5rem;
         width: 100%;
     }
     
@@ -36,13 +37,14 @@
 
     .offer {
         grid-area: wrapper;
-        width: 540px;
+        padding: 17px 78px 16px 78px;
+        width: 33.75rem;
     }
     
     .signup {
         grid-area: wrapper;
-        width: 540px;
-        padding: 40px 40px 43px 40px;
+        width: 33.75rem;
+        padding: 40px 40px 40px 40px;
     }
     
     .signup__enter {
@@ -50,6 +52,10 @@
         padding: 17px 0 15px 32px;
     }
     
+    .signup__error-text {
+        bottom: 19px;
+    }
+
     .signup__button {
         padding: 15px 0 13px 0;
     }
