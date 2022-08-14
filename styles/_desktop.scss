@@ -7,7 +7,7 @@
 
     .intro {
         align-items: center;
-        column-gap: 35px;
+        column-gap: 2.1875rem;
         display: grid;
         grid-template-areas: 
         "pitch wrapper"
@@ -21,10 +21,10 @@
     
     .pitch {
         grid-area: pitch;
-        width: 540px;
-        text-align: left;
-        padding: 75px 20px 63px 0;
         justify-self: right;
+        padding: 4.6875rem 1.25rem 3.9375rem 0;
+        text-align: left;
+        width: 33.75rem;
     }
 
     .pitch__title {
@@ -37,31 +37,31 @@
 
     .offer {
         grid-area: wrapper;
-        padding: 17px 78px 16px 78px;
+        padding: 1.0625rem 4.875rem 1rem 4.875rem;
         width: 33.75rem;
     }
     
     .signup {
         grid-area: wrapper;
+        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
         width: 33.75rem;
-        padding: 40px 40px 40px 40px;
     }
     
     .signup__enter {
-        margin: 0 0 21px 0;
-        padding: 17px 0 15px 32px;
+        margin: 0 0 1.3125rem 0;
+        padding: 1.0625rem 0 0.9375rem 2rem;
     }
     
     .signup__error-text {
-        bottom: 19px;
+        bottom: 1.1875rem;
     }
 
     .signup__button {
-        padding: 15px 0 13px 0;
+        padding: 0.9375rem 0 0.8125rem 0;
     }
     
     .signup__terms {
-        padding: 18px 15px 0 15px;
+        padding: 1.125rem 0.9375rem 0 0.9375rem;
     }
     
     footer {
