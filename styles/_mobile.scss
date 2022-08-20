@@ -56,7 +56,7 @@
     width: 100%;
 }
 
-.signup__enter {
+.signup__input {
     border: 1px $grayish-blue solid;
     border-radius: 6px;
     box-shadow: none;
@@ -69,7 +69,7 @@
     width: 100%;
 }
 
-.signup__control {
+.signup__field {
     position: relative;
 }
 
@@ -84,11 +84,11 @@
 }
 
 .signup__error-text {
-    bottom: 0;
     color: $red;
     font-size: 0.6875rem;
     position: absolute;
-    right: 2px;
+    right: 5px;
+    top: 56px;
 }
 
 .signup__button {
