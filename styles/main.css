@@ -226,6 +226,10 @@ body {
   display: none;
 }
 
+.js-email-empty-text {
+  display: none;
+}
+
 .js-pw-error-icon {
   display: none;
 }

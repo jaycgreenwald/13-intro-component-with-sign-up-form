@@ -72,7 +72,13 @@ function validateInput() {
     const email = document.querySelector(".js-email");
     const isValidEmail = emailRegex.test(email.value);
     
-    if (isValidEmail == false) {
+    if (email.value === "") {
+        document.querySelector(".js-email-error-icon").style.display = "block";
+        document.querySelector(".js-email-empty-text").style.display = "block";
+        email.style.border = "2px solid hsl(0, 100%, 74%)";
+        email.placeholder = "";
+    } else if (isValidEmail == false) {
+        document.querySelector(".js-email-empty-text").style.display = "none";
         document.querySelector(".js-email-error-icon").style.display = "block";
         document.querySelector(".js-email-error-text").style.display = "block"; 
         document.querySelector(".js-email").style.color = "hsl(0, 100%, 74%)";
@@ -83,5 +89,17 @@ function validateInput() {
         document.querySelector(".js-email").style.color = "hsl(249, 10%, 26%)";
         email.style.border = "1px solid hsl(246, 25%, 77%)";
     }
+    
+    // if (isValidEmail == false) {
+    //     document.querySelector(".js-email-error-icon").style.display = "block";
+    //     document.querySelector(".js-email-error-text").style.display = "block"; 
+    //     document.querySelector(".js-email").style.color = "hsl(0, 100%, 74%)";
+    //     email.style.border = "2px solid hsl(0, 100%, 74%)";
+    // } else {
+    //     document.querySelector(".js-email-error-icon").style.display = "none";
+    //     document.querySelector(".js-email-error-text").style.display = "none"; 
+    //     document.querySelector(".js-email").style.color = "hsl(249, 10%, 26%)";
+    //     email.style.border = "1px solid hsl(246, 25%, 77%)";
+    // }
     
 };
