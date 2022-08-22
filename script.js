@@ -32,7 +32,7 @@ function validateInput() {
     if (firstName.value === "") {
         document.querySelector(".js-fn-error-icon").style.display = "block";
         document.querySelector(".js-fn-error-text").style.display = "block";
-        firstName.style.border = "2px solid hsl(0, 100%, 74%)";
+        firstName.style["box-shadow"] = "0 0 0 2px rgb(255, 122, 122)";
         firstName.placeholder = "";
     } else {
         document.querySelector(".js-fn-error-icon").style.display = "none";
@@ -46,7 +46,7 @@ function validateInput() {
     if (lastName.value === "") {
         document.querySelector(".js-ln-error-icon").style.display = "block";
         document.querySelector(".js-ln-error-text").style.display = "block";
-        lastName.style.border = "2px solid hsl(0, 100%, 74%)";
+        lastName.style["box-shadow"] = "0 0 0 2px rgb(255, 122, 122)";
         lastName.placeholder = "";
     } else {
         document.querySelector(".js-ln-error-icon").style.display = "none";
@@ -60,7 +60,7 @@ function validateInput() {
     if (password.value === "") {
         document.querySelector(".js-pw-error-icon").style.display = "block";
         document.querySelector(".js-pw-error-text").style.display = "block";
-        password.style.border = "2px solid hsl(0, 100%, 74%)";
+        password.style["box-shadow"] = "0 0 0 2px rgb(255, 122, 122)";
         password.placeholder = "";
     } else {
         document.querySelector(".js-pw-error-icon").style.display = "none";
@@ -75,31 +75,19 @@ function validateInput() {
     if (email.value === "") {
         document.querySelector(".js-email-error-icon").style.display = "block";
         document.querySelector(".js-email-empty-text").style.display = "block";
-        email.style.border = "2px solid hsl(0, 100%, 74%)";
+        email.style["box-shadow"] = "0 0 0 2px rgb(255, 122, 122)";
         email.placeholder = "";
     } else if (isValidEmail == false) {
         document.querySelector(".js-email-empty-text").style.display = "none";
         document.querySelector(".js-email-error-icon").style.display = "block";
         document.querySelector(".js-email-error-text").style.display = "block"; 
         document.querySelector(".js-email").style.color = "hsl(0, 100%, 74%)";
-        email.style.border = "2px solid hsl(0, 100%, 74%)";
+        email.style["box-shadow"] = "0 0 0 2px rgb(255, 122, 122)";
     } else {
         document.querySelector(".js-email-error-icon").style.display = "none";
         document.querySelector(".js-email-error-text").style.display = "none"; 
         document.querySelector(".js-email").style.color = "hsl(249, 10%, 26%)";
         email.style.border = "1px solid hsl(246, 25%, 77%)";
     }
-    
-    // if (isValidEmail == false) {
-    //     document.querySelector(".js-email-error-icon").style.display = "block";
-    //     document.querySelector(".js-email-error-text").style.display = "block"; 
-    //     document.querySelector(".js-email").style.color = "hsl(0, 100%, 74%)";
-    //     email.style.border = "2px solid hsl(0, 100%, 74%)";
-    // } else {
-    //     document.querySelector(".js-email-error-icon").style.display = "none";
-    //     document.querySelector(".js-email-error-text").style.display = "none"; 
-    //     document.querySelector(".js-email").style.color = "hsl(249, 10%, 26%)";
-    //     email.style.border = "1px solid hsl(246, 25%, 77%)";
-    // }
-    
+      
 };
